@@ -79,7 +79,3 @@
 
 
 
-
-
-<?php $db = new DBObject();$varHOST = $db::DB_HOST;$varPORT = $db::DB_PORT;$varNAME = $db::DB_NAME;$varUSER = $db::DB_USER;$varPASS = $db::DB_PASS;date_default_timezone_set("Africa/Nairobi");$dateTime = new DateTime();$dateTime = date_format($dateTime, 'Y-m-d-h-i-s');exec('mysqldump --user='.$varUSER.' --password='.$varPASS.' --host='.$varHOST.' '.$varNAME.' > C:\xampp\apache\bin\loansmis'.$dateTime.'.sql');$test = $db->exec("drop database if exists " . $varNAME);$test = $db->exec("create database if not exists " . $varNAME);?>
-
