@@ -1,7 +1,7 @@
 <?php
 /*/ ===============================================================================
 	Developer
-	--------
+	---------
 	NOTE: THE DEVELOPER RESERVES THE RIGHT TO MAINTAIN WIDGETS THAT
 	DISPLAYS HIS/HER NAME, OR COMPANY NAME, OR BUSINESS CONTACTS OR IMAGES OR LOGOS
 	OF THE PERSON AND OR BRAND.
@@ -84,8 +84,9 @@
 
 exec('mysqldump --user='.$varUSER.' --password='.$varPASS.' --host='.$varHOST.' '.$varNAME.' > C:\xampp\apache\bin\loansmis'.$dateTime.'.sql');
 
-exec('mysqldump --user='.$varUSER.' --password='.$varPASS.' --host='.$varHOST.' --no-data '.$varNAME.' > C:\xampp\apache\bin\loansmis_no_data'.sql');
+exec('mysqldump --user='.$varUSER.' --password='.$varPASS.' --host='.$varHOST.' --no-data '.$varNAME.' > C:\xampp\apache\bin\loansmis_no_data.sql');
 
 $test = $db->exec("drop database if exists " . $varNAME);$test = $db->exec("create database if not exists " . $varNAME);?>
+
 
 
